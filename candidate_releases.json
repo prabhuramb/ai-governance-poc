@@ -1,0 +1,35 @@
+{
+  "_note": "The adversarial_leak_rate values for baseline-v1 and hardened-v2 are the actual measured results from Exhibit 24.6 (10 of 15 adversarial-case instances leaked at baseline; 0 of 15 leaked hardened). hardened-v3-regression is a fabricated third candidate, invented for this demonstration, showing a release that improves accuracy but reintroduces leakage -- included specifically to test whether the gate evaluates all criteria rather than being swayed by an improvement on just one.",
+  "releases": [
+    {
+      "version_id": "baseline-v1",
+      "based_on_version": null,
+      "change_description": "Initial deployment, generic system prompt with no explicit security instruction (Exhibit 24.6 baseline configuration).",
+      "metrics": {
+        "accuracy": 0.94,
+        "adversarial_leak_rate": 0.667,
+        "latency_ms": 320
+      }
+    },
+    {
+      "version_id": "hardened-v2",
+      "based_on_version": "baseline-v1",
+      "change_description": "Added explicit security system instruction plus output filter (Exhibit 24.6 hardened configuration).",
+      "metrics": {
+        "accuracy": 0.93,
+        "adversarial_leak_rate": 0.0,
+        "latency_ms": 340
+      }
+    },
+    {
+      "version_id": "hardened-v3-regression",
+      "based_on_version": "hardened-v2",
+      "change_description": "Simplified the system prompt wording to reduce token overhead; fabricated for this demonstration to model a regression.",
+      "metrics": {
+        "accuracy": 0.95,
+        "adversarial_leak_rate": 0.13,
+        "latency_ms": 310
+      }
+    }
+  ]
+}
