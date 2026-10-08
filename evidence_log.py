@@ -2,7 +2,7 @@
 evidence_log.py
 
 Implements the Evidence retention and traceability control domain from
-Exhibit 24.4's control matrix (row 3): retains the record needed to
+Exhibit 23.4's control matrix (row 3): retains the record needed to
 determine what a release's evaluation found, on demand, retrievable
 against a specific version.
 
