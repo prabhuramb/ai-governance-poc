@@ -47,12 +47,12 @@ harness and measured results across three independent runs"
 > 23.6 AI Governance Control Gate: Demonstrated Proof-of-Concept.
 > Self-built pipeline evaluating candidate releases against a
 > pre-deployment gate, with change control and evidence retention,
-> operationalizing three of the five control domains specified at 24.4.
+> operationalizing three of the five control domains specified at 23.4.
 
 **(b) In the "Note on the technical designs described" section**, add
-after the existing sentences about 23.5 and 24.2, Part C:
+after the existing sentences about 23.5 and 23.2, Part C:
 
-> Exhibit 23.6 similarly supplements Exhibit 24.4 with a demonstrated,
+> Exhibit 23.6 similarly supplements Exhibit 23.4 with a demonstrated,
 > measured proof-of-concept of three of that specification's five control
 > domains (the pre-deployment evaluation gate, change control, and
 > evidence retention and traceability). It does not convert the remaining
@@ -61,13 +61,13 @@ after the existing sentences about 23.5 and 24.2, Part C:
 
 ---
 
-## 4. Exhibit 24.5 — Declaration — new paragraph 13
+## 4. Exhibit 23.7 — Declaration — new paragraph 13
 
 If you've applied both prior edits, your declaration now ends its numbered
-content at paragraph 12. **Insert a new paragraph 13** before the closing
+content at paragraph 25. **Insert a new paragraph 26** before the closing
 perjury statement:
 
-> 13. I subsequently built the governance pipeline and conducted the
+> 26. I subsequently built the governance pipeline and conducted the
 > evaluation runs described at Exhibit 23.6, on September 24, 2026. Two of
 > the three candidate releases evaluated used the actual measured
 > adversarial leak rates from Exhibit 23.5 as evaluation input; the third
@@ -80,7 +80,7 @@ perjury statement:
 
 ## Where things stand after this edit
 
-With all three proof-of-concept exhibits applied (23.5, 24.2 Part C, and
+With all three proof-of-concept exhibits applied (23.5, 23.2 Part C, and
 23.6), the petition now demonstrates work across all three endeavor
 components:
 
