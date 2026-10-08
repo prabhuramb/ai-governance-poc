@@ -1,14 +1,14 @@
 # AI Governance Control Gate - Proof-of-Concept
 
 A small, self-contained demonstration of three control domains from the
-Exhibit 24.4 control matrix: the pre-deployment evaluation gate, model
+Exhibit 23.4 control matrix: the pre-deployment evaluation gate, model
 change control, and evidence retention/traceability.
 
 ## What this demonstrates
 
 Three candidate "releases" are evaluated against fixed thresholds
 (accuracy, adversarial leak rate, latency). Two of the three releases use
-the **real, already-measured leak rates from Exhibit 24.6** (67% baseline,
+the **real, already-measured leak rates from Exhibit 23.6** (67% baseline,
 0% hardened) as actual gate input -- this isn't fabricated data, it's your
 prior demonstrated result being used as a real evaluation metric. The
 third release is a fabricated regression case: higher accuracy, but a
