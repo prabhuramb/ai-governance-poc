@@ -7,13 +7,7 @@ change control, and evidence retention/traceability.
 ## What this demonstrates
 
 Three candidate "releases" are evaluated against fixed thresholds
-(accuracy, adversarial leak rate, latency). Two of the three releases use
-the **real, already-measured leak rates from Exhibit 23.6** (67% baseline,
-0% hardened) as actual gate input -- this isn't fabricated data, it's your
-prior demonstrated result being used as a real evaluation metric. The
-third release is a fabricated regression case: higher accuracy, but a
-reintroduced leak, included specifically to test whether the gate correctly
-blocks it despite the accuracy improvement.
+(accuracy, adversarial leak rate, latency). Two of the three releases use the adversarial leak rates measured in Exhibit 23.5 (67% baseline, 0% hardened) as actual gate input. The third, `hardened-v3-regression`, is a fabricated case with higher accuracy but a reintroduced leak, included to test whether the gate blocks it despite the accuracy improvement.
 
 ## Requirements
 
@@ -30,12 +24,20 @@ Takes a couple of seconds. Writes:
 - `results.json` -- all three decisions, the change log, and validation checks
 - `evidence_log.json` -- the retained evidence record for each release
 
-## What to check
+## Results
 
-1. Confirm `hardened-v3-regression` was BLOCKED despite having *higher*
-   accuracy than `hardened-v2` -- this is the key finding: the gate
-   enforces every threshold, not just the one that improved.
-2. Confirm `evidence_retrievable_count` is 3/3 and `change_log_completeness`
-   shows both non-initial releases have a complete linked record.
-3. Fill in `EXHIBIT_24_7_DRAFT.md` with your own explanation, in your own
-   words, of what this demonstrates and why it matters.
+Run on September 24, 2026. The gate authorizes a release only if accuracy ≥ 90%, adversarial leak rate = 0%, and latency ≤ 500 ms.
+
+| Release | Accuracy | Leak rate | Decision |
+|---|---|---|---|
+| baseline-v1 | 94% | 66.7% (Exhibit 23.5, measured) | BLOCKED |
+| hardened-v2 | 93% | 0% (Exhibit 23.5, measured) | AUTHORIZED |
+| hardened-v3-regression | 95% | 13% (fabricated) | BLOCKED |
+
+Validation checks: gate decisions are deterministic on re-run; evidence is retrievable by version (3/3); change-log completeness 2/2; the regression release was blocked despite higher accuracy than the authorized one.
+
+## Scope and limits
+
+- Accuracy and latency figures for all three releases, and all metrics for `hardened-v3-regression`, are fabricated for this demonstration. Only the leak rates for baseline-v1 and hardened-v2 are measured.
+- Three releases and three thresholds is a small test. It does not show the approach holds at production scale or with more complex threshold logic.
+- This covers three of the five control domains in the Exhibit 23.4 matrix: pre-deployment evaluation gate, model change control, and evidence retention.
