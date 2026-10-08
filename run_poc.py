@@ -2,7 +2,7 @@
 run_poc.py
 
 Runs the full governance pipeline:
-  1. Load candidate releases (one of which carries real Exhibit 24.6 data)
+  1. Load candidate releases (one of which carries real Exhibit 23.6 data)
   2. Evaluate each against the pre-deployment gate (gate.py)
   3. Record evidence for each decision (evidence_log.py)
   4. Build the change-control log linking releases to prior versions (change_control.py)
