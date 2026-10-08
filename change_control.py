@@ -2,7 +2,7 @@
 change_control.py
 
 Implements the Model and configuration change control domain from Exhibit
-24.4's control matrix (row 2): treats each release as a controlled change
+23.4's control matrix (row 2): treats each release as a controlled change
 subject to re-evaluation, with a change log entry linking it to what it
 changed from and the evaluation result that followed.
 
