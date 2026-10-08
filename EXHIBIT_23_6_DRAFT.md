@@ -1,4 +1,4 @@
-# EXHIBIT 23.7 — AI GOVERNANCE CONTROL GATE: DEMONSTRATED PROOF-OF-CONCEPT
+# EXHIBIT 23.6 — AI GOVERNANCE CONTROL GATE: DEMONSTRATED PROOF-OF-CONCEPT
 [DRAFT — read closely, verify every sentence against your own understanding,
 and rewrite anything that isn't genuinely in your own words before this goes
 anywhere near the petition.]
