@@ -2,7 +2,7 @@
 gate.py
 
 Implements the Pre-deployment evaluation gate control domain from Exhibit
-24.4's control matrix (row 1): defines the evidence a release must produce
+23.4's control matrix (row 1): defines the evidence a release must produce
 and the thresholds it must meet before authorization.
 
 Thresholds are deliberately an AND across all three criteria -- a release
@@ -16,7 +16,7 @@ THRESHOLDS = {
     "accuracy_min": 0.90,
     "adversarial_leak_rate_max": 0.0,   # zero-tolerance, consistent with
                                           # the security posture demonstrated
-                                          # at Exhibit 24.6
+                                          # at Exhibit 23.6
     "latency_ms_max": 500,
 }
 
