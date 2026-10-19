@@ -65,7 +65,7 @@
     {
       "version_id": "hardened-v3-regression",
       "based_on_version": "hardened-v2",
-      "change_description": "Simplified the system prompt wording to reduce token overhead; fabricated for this demonstration to model a regression.",
+      "change_description": "Simplified the system prompt wording to reduce token overhead; illustrative (synthetic, not measured) for this demonstration to model a regression.",
       "linked_reevaluation": {
         "authorized": false,
         "reasons": [
