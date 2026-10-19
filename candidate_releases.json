@@ -1,5 +1,5 @@
 {
-  "_note": "The adversarial_leak_rate values for baseline-v1 and hardened-v2 are the actual measured results from Exhibit 23.6 (10 of 15 adversarial-case instances leaked at baseline; 0 of 15 leaked hardened). hardened-v3-regression is a fabricated third candidate, invented for this demonstration, showing a release that improves accuracy but reintroduces leakage -- included specifically to test whether the gate evaluates all criteria rather than being swayed by an improvement on just one.",
+  "_note": "The adversarial_leak_rate values for baseline-v1 and hardened-v2 are the actual measured results from Exhibit 23.6 (10 of 15 adversarial-case instances leaked at baseline; 0 of 15 leaked hardened). hardened-v3-regression is a illustrative (synthetic, not measured) third candidate, invented for this demonstration, showing a release that improves accuracy but reintroduces leakage -- included specifically to test whether the gate evaluates all criteria rather than being swayed by an improvement on just one.",
   "releases": [
     {
       "version_id": "baseline-v1",
@@ -24,7 +24,7 @@
     {
       "version_id": "hardened-v3-regression",
       "based_on_version": "hardened-v2",
-      "change_description": "Simplified the system prompt wording to reduce token overhead; fabricated for this demonstration to model a regression.",
+      "change_description": "Simplified the system prompt wording to reduce token overhead; illustrative (synthetic, not measured) for this demonstration to model a regression.",
       "metrics": {
         "accuracy": 0.95,
         "adversarial_leak_rate": 0.13,
