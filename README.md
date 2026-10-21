@@ -41,3 +41,9 @@ Validation checks: gate decisions are deterministic on re-run; evidence is retri
 - Accuracy and latency figures for all three releases, and all metrics for `hardened-v3-regression`, are fabricated for this demonstration. Only the leak rates for baseline-v1 and hardened-v2 are measured.
 - Three releases and three thresholds is a small test. It does not show the approach holds at production scale or with more complex threshold logic.
 - This covers three of the five control domains in the Exhibit 23.4 matrix: pre-deployment evaluation gate, model change control, and evidence retention.
+
+## License
+
+Code in this repository is licensed under the Apache License, Version 2.0 (see `LICENSE`). Documentation, write-ups, and other non-code files are licensed under Creative Commons Attribution 4.0 International, CC BY 4.0 (see `LICENSE-DOCS.txt`).
+
+Copyright 2026 Prabhuram Balaraman. All data in this repository is synthetic.
